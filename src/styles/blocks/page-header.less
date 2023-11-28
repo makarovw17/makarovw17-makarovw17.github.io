@@ -1,0 +1,46 @@
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 147px;  
+
+    &:before{ 
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;   
+        height: 100%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(222, 222, 222, 0.5);  
+        }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 40px;
+        margin: 0 auto;
+        padding-right: 40px;
+        max-width: 1414px;
+        width: 100%;
+        box-sizing:border-box;
+        position: relative;
+     }
+    &__logo{
+        margin-right: 237px;
+        width: 202px;
+        height: 147px;
+     }
+    &__nav{
+        display: inline-block;
+    }
+    &__nav-link{
+        margin: 0 25px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+     }
+    }
