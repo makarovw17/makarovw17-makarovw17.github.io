@@ -1,46 +1,80 @@
-.page-header{
-    position: fixed;
-    top: 0;
-    left: 0;   
-    width: 100%;
-    height: 147px;  
+.page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 147px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(222, 222, 222, 0.5);
+	backdrop-filter: blur(20px);
+	z-index: 100;
 
-    &:before{ 
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;   
-        height: 100%;
-        backdrop-filter: blur(10px);
-        background-color: rgba(222, 222, 222, 0.5);  
-        }
-    &__container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 40px;
-        margin: 0 auto;
-        padding-right: 40px;
-        max-width: 1414px;
-        width: 100%;
-        box-sizing:border-box;
-        position: relative;
-     }
-    &__logo{
-        margin-right: 237px;
-        width: 202px;
-        height: 147px;
-     }
-    &__nav{
-        display: inline-block;
-    }
-    &__nav-link{
-        margin: 0 25px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 25px;
-        text-decoration: none;
-        color: black;
-     }
-    }
+	&__container {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 1414px;
+		margin: 0 auto;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	&__container {
+		.container();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(10px);
+		background-color: rgba(222, 222, 222, 0.5);
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		width: 202px;
+		height: 147px;
+		font-size: 0;
+		text-decoration: none;
+	}
+	&__logo-img {
+		width: 100%;
+		height: 100%;
+	}
+	&__nav {
+		display: flex;
+		align-items: baseline;
+		margin: 0 auto;
+	}
+	&__nav-link {
+		margin: 0 25px;
+		color: @black;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+	&__nav-link:hover {
+		color: #bc3324;
+	}
+	&__user-btn {
+		box-sizing: border-box;
+		padding: 15px 40px;
+		border: 1px solid @black;
+		font-size: 16px;
+		line-height: normal;
+		color: @black;
+		font-weight: 600;
+		text-decoration: none;
+		background-color: transparent;
+	}
+}

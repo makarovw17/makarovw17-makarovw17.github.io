@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('blocks/head.html')
+	<body>
+		@@include('blocks/page-header.html')
+		<main class="main">
+			<!-- Здесь будут хлебные крошки -->
+			<div class="events">
+				<div class="events__container">
+					<h2 class="events__title title">Мероприятия</h2>
+
+					<div class="events__list listing">
+						<!-- prettier-ignore -->
+						@@loop('blocks/event-card.html', [
+		{
+			"class": "listing__event-card",
+			"img": "assets/images/nirvana.png",
+			"alt": "nirvana",
+			"title": "Собираемся и слушаем альбом Nirvana",
+			"descr": "Это третий альбом группы...",
+			"time": "07.12.2022 | начало 18.00",
+			"datetime": "2022-12-07T18:00"
+		},
+		{
+			"class": "listing__event-card",
+			"img": "assets/images/stuff.png",
+			"alt": "stuff",
+			"title": "Есть тема, нужно обсудить с HowStuffWorks",
+			"descr": "Один из самых популярных подкастов в мире...",
+			"time": "14.12.2022 | начало 18.30",
+			"datetime": "2022-12-14T18:30"
+		}
+	])
+					</div>
+
+					<!-- Кнопка "Показать все" -->
+				</div>
+				<!-- Остальная разметка -->s
+			</div>
+		</main>
+		<footer class="page-footer"></footer>
+	</body>
+</html>
