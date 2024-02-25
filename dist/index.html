@@ -16,7 +16,7 @@
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-img" width="202" height="147">
-          <use xlink href="assets/icons/symbols.svg#logo"></use>
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
       <nav class="page-header__nav">
@@ -54,6 +54,53 @@
     </div>
   </main>
   <footer class="page-footer"></footer>
+  <div class="pp">
+    <div class="pp__container">
+      <div class="pp__sticky-close">
+        <button type="button" class="pp__sticky-btn">
+          <svg class="pp__btn-icon" width="24" height="24">
+            <use xlink:href="assets/icons/cross.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__wrapper">
+        <h3 class="pp__title">
+          Заполните форму
+          <br />
+          и мы подберем площадку
+        </h3>
+        <div class="pp__form form">
+          <div class="pp__list">
+            <div class="form__field field">
+              <h6 class="form__title">формат мероприятия:</h6>
+              <div class="field__radio radio">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="seminar" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name">Мастер-класс/семинар</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="concert" value="seminar" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name">Концерт/выступление</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="show" value="seminar" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name">Выставка/показ</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="other" value="seminar" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name">Другое</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
